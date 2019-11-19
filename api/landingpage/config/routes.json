@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/landingpages",
+      "handler": "Landingpage.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/landingpages/count",
+      "handler": "Landingpage.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/landingpages/:id",
+      "handler": "Landingpage.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/landingpages",
+      "handler": "Landingpage.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/landingpages/:id",
+      "handler": "Landingpage.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/landingpages/:id",
+      "handler": "Landingpage.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

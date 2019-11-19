@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "landingpages",
+  "info": {
+    "name": "landingpage",
+    "description": "Landing Page Content"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "subTitle": {
+      "type": "string"
+    }
+  }
+}
